@@ -1,0 +1,13 @@
+$color-header-bg: #b4009e;
+$color-header-fg: #fff;
+
+.Header {
+    padding: 4vh 2.5vw;
+
+    background-color: $color-header-bg;
+    color: $color-header-fg;
+
+    &-title {
+        font-size: 4vh;
+    }
+}

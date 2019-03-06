@@ -1,0 +1,12 @@
+$color-link-fg: #ccc;
+
+.Footer {
+    padding-bottom: 2vh;
+
+    font-size: 1.5vh;
+
+    &,
+    &-link {
+        color: $color-link-fg;
+    }
+}

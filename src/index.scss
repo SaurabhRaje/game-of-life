@@ -1,0 +1,16 @@
+@import "settings.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+
+  background-color: $color-page-bg;
+  color: $color-page-fg;
+
+  &, input {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../settings.scss";
+
+$color-switcher-bg: rgba(0, 0, 0, 0.4);
+$color-switcher-bg-hover: rgba(0, 0, 0, 0.6);
+
+$color-switcher-active-fg: $color-page-bg;
+$color-switcher-active-bg: #fff;
+
+.Switcher {
+    display: flex;
+
+    width: 50%;
+    margin: 3vh auto;
+
+    &-option {
+        flex: 1;
+
+        padding: 1vh 0;
+
+        background-color: $color-switcher-bg;
+
+        transition: background-color 0.2s, color 0.2s;
+
+        &:hover {
+            background-color: $color-switcher-bg-hover;
+
+            cursor: pointer;
+        }
+
+        &:first-child {
+            border-radius: 2vh 0 0 2vh;
+        }
+
+        &:last-child {
+            border-radius: 0 2vh 2vh 0;
+        }
+
+        &--active {
+            &, &:hover {
+                font-weight: 600;
+
+                background-color: $color-switcher-active-bg;
+                color: $color-switcher-active-fg;
+            }
+        }
+    }
+
+    &-radio {
+        appearance: none;
+    }
+
+    &-value {
+        vertical-align: 1px;
+    }
+}

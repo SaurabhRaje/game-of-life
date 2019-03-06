@@ -1,0 +1,41 @@
+@import "../settings.scss";
+
+$color-button-bg: #e0e1e2;
+$color-button-fg: #000;
+
+.App {
+    line-height: 1;
+    margin: 0 auto;
+
+  &-main {
+    box-sizing: border-box;
+
+    padding: 5vh 14vw 10vh;
+    margin: 0 auto;
+  }
+
+  &-button {
+    padding: 1vh 4vh;
+    border: none;
+    border-radius: 3px;
+    margin-top: 2vh;
+    outline: none;
+
+    font-size: 3vh;
+    font-weight: 600;
+
+    background-color: $color-button-bg;
+    color: rgba($color-button-fg, 0.75);
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-button-bg, 5%);
+      color: $color-button-fg;
+    }
+
+    & + & {
+      margin-left: 2vw;
+    }
+  }
+}

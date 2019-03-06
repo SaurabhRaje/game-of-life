@@ -1,0 +1,22 @@
+{
+  "name": "game-of-life",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "start": "npm-run-all -p start-sass start-js",
+    "build": "npm-run-all build-sass build-js",
+    "start-sass": "npm run build-sass && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "build-sass": "node-sass-chokidar src/ -o src/",
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

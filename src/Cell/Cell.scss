@@ -1,0 +1,20 @@
+@import "../settings.scss";
+
+$color-cell-border: #777;
+$color-cell-bg-hover: rgba(0, 0, 0, 0.4);
+$color-cell-bg-alive: #fff;
+
+.Cell {
+    box-sizing: border-box;
+
+    padding: 0;
+    border: 1px solid $color-cell-border;
+
+    &:hover {
+        background-color: $color-cell-bg-hover;
+    }
+
+    &--alive {
+        background-color: $color-cell-bg-alive;
+    }
+}
